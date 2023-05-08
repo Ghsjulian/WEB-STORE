@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/index.css" />
+    <link rel="stylesheet" href="public/css/__product_styles__.css" />
+
+    <title>WEB STORE - ONLINE</title>
+    <meta
+      name="description"
+      content="G H S J U L I A  N | Ghs Julian | Web Developer And Designer | Ghs Julian Programmer | PHP Developer & Programmer | Programmer Ghs Julian"
+    />
+    <meta
+      name="author"
+      content="G H S J U L I A  N | Ghs Julian | Web Developer And Designer | Ghs Julian Programmer | PHP Developer & Programmer | Programmer Ghs Julian"
+    />
+    <link rel="icon" href="public/icons/ghs_logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="side-bar">
+      <h3>Menu</h3>
+      <div id="side-search">
+        <input
+          id="search-value"
+          type="text"
+          name="search"
+          placeholder="Search..."
+        />
+        <button type="button" value="" id="srch_btn">🔍</button>
+      </div>
+      <li onclick="openNav('Dashboard')">
+        <object
+          data="public/svg/dashboard.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="http://localhost:8000/ONLINE-STORE/WEB-STORE/">Dashboard</a>
+      </li>
+      <li onclick="openNav('User')">
+        <object
+          data="public/svg/users.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Category List</a>
+      </li>
+      <li onclick="openNav('Post')">
+        <object
+          data="public/svg/content.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Content</a>
+      </li>
+      <li onclick="openNav('Comment')">
+        <object
+          data="public/svg/comment.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Your Orders</a>
+      </li>
+      <li onclick="openNav('Media')">
+        <object
+          data="public/svg/videos.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Delivered</a>
+      </li>
+      <li onclick="openNav('Profile')">
+        <object
+          data="public/svg/profile-circle.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Profile</a>
+      </li>
+      <li onclick="openNav('Notification')">
+        <object
+          data="public/svg/notification.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Notification</a>
+      </li>
+      <li onclick="openNav('About')">
+        <object
+          data="public/svg/info.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">About Us</a>
+      </li>
+
+      <li onclick="openNav('Contact')">
+        <object
+          data="public/svg/notification.svg"
+          width="30"
+          height="30"
+          type="image/svg+xml"
+        ></object>
+        <a href="#">Contact Us</a>
+      </li>
+    </div>
+    <div class="top-bar">
+      <h3 class="logo">
+        <span style="color: #f00">Web</span>-<span
+          style="color: rgb(220, 0, 200)"
+          >Fashion</span
+        >
+      </h3>
+      <div class="navbar">
+        <a href="#"
+          ><img onclick="openNav('Profile')" src="public/icons/ghs_logo.png"
+        /></a>
+      </div>
+      <img
+        id="menu"
+        src="public/svg/menu-bar.svg"
+        width="30"
+        height="30"
+        type="image/svg+xml"
+      />
+    </div>
+    <!--- DASHBOARD SECTION STARTED ------>
+    <section id="Dashboard" class="tab">
+      <div class="product-area">
+        <div id="login" class="login">
+          <center>
+            <h1>
+              Update
+              <span>Products</span>
+            </h1>
+            <br />
+            <!--<img src="svg/profile-circle.svg" />--->
+            <form id="myfrm" action="#" method="POST">
+              <p style="display: none" class="_error"></p>
+              <p style="display: none" class="_success"></p>
+              <label for="username">
+                <i class="fas fa-user"></i>
+              </label>
+              <input
+                type="file"
+                name="file"
+                id="file"
+                class="inputfile"
+                accept="image/png, image/jpeg"
+              />
+              <label id="upload" for="file">Upload Image</label>
+              <input
+                type="text"
+                name="action"
+                placeholder="Enter Full Name "
+                value="Login"
+                id="action"
+                autocomplete="on"
+                hidden="true"
+              />
+              <input
+                type="text"
+                name="product_name"
+                placeholder="Enter Product Name"
+                id="product_name"
+                autocomplete="on"
+                onfocus="true"
+              />
+              <input
+                type="text"
+                name="product_size"
+                placeholder="Enter Product Size"
+                id="product_size"
+                autocomplete="on"
+                onfocus="true"
+              />
+              <input
+                type="number"
+                name="product_price"
+                placeholder="Enter Price"
+                id="product_price"
+                autocomplete="on"
+                onfocus="true"
+              />
+
+              <input
+                type="text"
+                name="product_dscrpt"
+                placeholder="Enter Descriptions"
+                id="product_dscrpt"
+                autocomplete="on"
+                onfocus="true"
+              />
+              <button class="__upload_btn" type="submit" id="__btn">
+                Upload Now
+              </button>
+            </form>
+          </center>
+        </div>
+      </div>
+    </section>
+    <section style="display: none" id="Post" class="tab post">
+      <div class="string">
+        <h1>Post By - <span class="style">Ghs Julian</span></h1>
+        You know what I mean one of the world when I get home from work guys are
+        doing well said brother and I Wanna Say Thanks for the way how are you
+        feeling today is our worship festival of Hinduism and Buddhism
+      </div>
+
+      <div class="string">
+        <h1>Post By - <span class="style">Ghs Julian</span></h1>
+        You know what I mean one of the world when I get home from work guys are
+        doing well said brother and I Wanna Say Thanks for the way how are you
+        feeling today is our worship festival of Hinduism and Buddhism
+      </div>
+    </section>
+
+    <section style="display: none" id="User" class="tab user">
+      <div class="string">
+        <center><h1>Total User</h1></center>
+        <br />
+        <li>
+          <img src="public/icons/ghs_logo.png" /><span>Ghs Julian </span>
+          <button class="edit">Edit</button>
+          <button class="rmv">Remove</button>
+        </li>
+        <li>
+          <img src="public/icons/ghs_logo.png" /><span>Ghs Julian </span>
+          <button class="edit">Edit</button>
+          <button class="rmv">Remove</button>
+        </li>
+      </div>
+    </section>
+
+    <section style="display: none" id="Comment" class="tab comment">
+      <div class="string">
+        <h1>Comments</h1>
+        <li>
+          <img src="public/icons/ghs_logo.png" /><span>Ghs Julian</span>
+
+          <button class="rmv">Remove</button>
+        </li>
+      </div>
+    </section>
+
+    <section style="display: none" id="Profile" class="tab profile">
+      <h1>Profile</h1>
+    </section>
+
+    <section style="display: none" id="Media" class="tab media">
+      <h1>Media</h1>
+    </section>
+
+    <section style="display: none" id="Notification" class="tab notification">
+      <h1>Notification</h1>
+    </section>
+
+    <!--     <script type="module" src="public/js/navbar.js"></script>
+ -->
+    <script type="module" src="public/js/MAIN.JS"></script>
+    <script src="public/js/router.js"></script>
+  </body>
+</html>
