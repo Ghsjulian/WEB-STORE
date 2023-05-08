@@ -37,10 +37,10 @@ SERVER SIDE DEMO : http://ghs.rf.gd/WEB-STORE/WEB-STORE/index.php
 (*) There Is'nt Any Back End Method . Just For Styling !
 ```
 ## Demo And Screenshots : 
-![CAPTURE](public/icons/s5.jpg)
-![CAPTURE](public/icons/s2.jpg)
-![CAPTURE](public/icons/s3.jpg)
-![CAPTURE](public/icons/s4.jpg)
-![CAPTURE](public/icons/s1.jpg)
+![CAPTURE](/public/icons/s5.jpg)
+![CAPTURE](/public/icons/s2.jpg)
+![CAPTURE](/public/icons/s3.jpg)
+![CAPTURE](/public/icons/s4.jpg)
+![CAPTURE](/public/icons/s1.jpg)
 
 
