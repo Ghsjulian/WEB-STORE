@@ -5,7 +5,7 @@ DEMO : -------👇
 
 https://ghsjulian.github.io/WEB-STORE/
 
-SERVER SIDE DEMO : http://ghs.rf.gd/WEB-STORE/WEB-STORE/
+SERVER SIDE DEMO : http://ghs.rf.gd/WEB-STORE/WEB-STORE/index.php
 
 
 
